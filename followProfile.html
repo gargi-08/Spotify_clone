@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaar Diwaari - Spotify</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="top-navbar">
+        <div class="nav-left">
+            <span class="three-dots">&#8943;</span>
+            <button class="arrow-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="arrow-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="nav-center">
+            <button class="home-icon-btn">
+                <i class="fas fa-home"></i>
+            </button>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="What do you want to play?">
+                <button class="divider-btn"><i class="fas fa-th"></i></button>
+            </div>
+        </div>
+        <div style="width: 100px;"></div>
+    </div>
+    <div class="main-area">
+        <div class="sidebar">
+            <button class="sb-icon"><i class="fas fa-bars"></i></button>
+            <button class="sb-add"><i class="fas fa-plus"></i></button>
+            <div style="height: 4px;"></div>
+            <div class="sb-liked">&#9829;</div>
+            <div class="sb-tile" style="background: linear-gradient(135deg, #0d6efd, #0a58ca); display:flex; align-items:center; justify-content:center;">
+                <i class="fas fa-bookmark" style="color:white; font-size:14px;"></i>
+            </div>
+            <div class="sb-tile round">
+                <img src="https://picsum.photos/seed/sb-artist1/38/38" alt="artist">
+            </div>
+            <div class="sb-tile" style="background: linear-gradient(135deg, #c2185b, #e91e63);">
+            </div>
+            <div class="sb-tile" style="background: linear-gradient(135deg, #6a0dad, #9c27b0);">
+            </div>
+            <div class="sb-tile" style="background: linear-gradient(135deg, #1b5e20, #388e3c);">
+            </div>
+            <div class="sb-tile">
+                <img src="https://picsum.photos/seed/sb-mix1/38/38" alt="playlist">
+            </div>
+            <div class="sb-tile">
+                <img src="https://picsum.photos/seed/sb-mix2/38/38" alt="playlist">
+            </div>
+            <div class="sb-tile round">
+                <img src="https://picsum.photos/seed/sb-artist2/38/38" alt="artist">
+            </div>
+            <div class="sb-tile round">
+                <img src="https://picsum.photos/seed/sb-artist3/38/38" alt="artist">
+            </div>
+            <div class="sb-tile">
+                <img src="https://picsum.photos/seed/sb-mix3/38/38" alt="playlist">
+            </div>
+            <div class="sb-tile round">
+                <img src="https://picsum.photos/seed/sb-artist4/38/38" alt="artist">
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="hero-section">
+                <div class="artist-circle">
+                    <img src="https://picsum.photos/seed/chaardiwaari-hero/300/300" alt="Chaar Diwaari">
+                </div>
+                <div class="artist-details">
+                    <div class="artist-name">Chaar Diwaari</div>
+                    <div class="verified-row">
+                        <div class="verify-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <span class="verify-text">Verified by Spotify</span>
+                    </div>
+                    <div class="listeners-text">2,034,056 monthly listeners</div>
+                </div>
+            </div>
+            <div class="controls-bar">
+                <button class="play-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="mini-album-btn">
+                    <img src="https://picsum.photos/seed/chaar-album-mini/44/44" alt="album art">
+                </button>
+                <button class="shuffle-btn">
+                    <i class="fas fa-random"></i>
+                </button>
+                <button class="follow-outline-btn">Follow</button>
+                <button class="dots-btn">&#8943;</button>
+            </div>
+            <div class="content-cols">
+                <div>
+                    <div class="sec-title">Popular</div>
+                    <div class="song-item">
+                        <div class="s-num">1</div>
+                        <img class="s-thumb" src="https://picsum.photos/seed/banda-kaam/44/44" alt="Banda Kaam Ka">
+                        <div class="s-name-wrap">
+                            <div class="s-name">Banda Kaam Ka</div>
+                        </div>
+                        <div class="s-plays">21,183,652</div>
+                        <i class="fas fa-check-circle s-liked"></i>
+                        <div class="s-dur">4:08</div>
+                    </div>
+                    <div class="song-item">
+                        <div class="s-num">2</div>
+                        <img class="s-thumb" src="https://picsum.photos/seed/iss-tarah/44/44" alt="Iss Tarah">
+                        <div class="s-name-wrap">
+                            <div class="s-name">Iss Tarah</div>
+                        </div>
+                        <div class="s-plays">15,965,675</div>
+                        <i class="fas fa-check-circle s-liked"></i>
+                        <div class="s-dur">5:23</div>
+                    </div>
+                    <div class="song-item">
+                        <div class="s-num">3</div>
+                        <img class="s-thumb" src="https://picsum.photos/seed/farebi/44/44" alt="Farebi">
+                        <div class="s-name-wrap">
+                            <div class="s-name">Farebi</div>
+                            <span class="e-badge">E</span>
+                        </div>
+                        <div class="s-plays">23,861,150</div>
+                        <div class="s-liked-empty"></div>
+                        <div class="s-dur">3:54</div>
+                    </div>
+                    <div class="song-item">
+                        <div class="s-num">4</div>
+                        <img class="s-thumb" src="https://picsum.photos/seed/aashiqana/44/44" alt="Aashiqana">
+                        <div class="s-name-wrap">
+                            <div class="s-name">Aashiqana</div>
+                        </div>
+                        <div class="s-plays">3,252,890</div>
+                        <i class="fas fa-check-circle s-liked"></i>
+                        <div class="s-dur">6:43</div>
+                    </div>
+                    <div class="song-item">
+                        <div class="s-num">5</div>
+                        <img class="s-thumb" src="https://picsum.photos/seed/jhaag/44/44" alt="Jhaag">
+                        <div class="s-name-wrap">
+                            <div class="s-name">Jhaag</div>
+                        </div>
+                        <div class="s-plays">17,167,649</div>
+                        <div class="s-liked-empty"></div>
+                        <div class="s-dur">2:29</div>
+                    </div>
+                    <button class="see-more">See more</button>
+                </div>
+                <div>
+                    <div class="sec-title">You Liked</div>
+                    <div class="liked-card">
+                        <div class="liked-photo-wrap">
+                            <img class="liked-photo" src="https://picsum.photos/seed/chaardiwaari-hero/72/72" alt="Chaar Diwaari">
+                            <div class="heart-badge">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="liked-count">3 songs</div>
+                            <div class="liked-by">By Chaar Diwaari</div>
+                        </div>
+                    </div>
+                    <div class="sec-title">Artist pick</div>
+                    <button class="pick-pill">
+                        <div class="pick-pill-img">
+                            <img src="https://picsum.photos/seed/parvana-pill/32/32" alt="Parvana">
+                        </div>
+                        <span class="pick-pill-text">Parvana OUT NOW</span>
+                    </button>
+                    <div class="ep-row">
+                        <img class="ep-img" src="https://picsum.photos/seed/parvana-ep/72/72" alt="Parvana EP">
+                        <div>
+                            <div class="ep-name">Parvana</div>
+                            <div class="ep-label">EP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

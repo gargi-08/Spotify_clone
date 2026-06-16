@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Home Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-navbar">
+        <div class="nav-middle">
+            <button class="home-icon-btn active-home">
+                <i class="fas fa-home"></i>
+            </button>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="What do you want to play?">
+                <button class="browse-icon">
+                    <i class="fas fa-th"></i>
+                </button>
+            </div>
+        </div>
+        <div class="nav-right-icons">
+            <button class="icon-btn"><i class="fas fa-bell"></i></button>
+            <button class="icon-btn"><i class="fas fa-user-friends"></i></button>
+            <div class="profile-avatar">
+                G
+            </div>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="left-sidebar">
+            <button class="sidebar-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="sidebar-plus">
+                <i class="fas fa-plus"></i>
+            </button>
+            <div style="height: 6px;"></div>
+            <div class="liked-thumb">&#9829;</div>
+            <div class="sidebar-thumb" style="background: linear-gradient(135deg, #2d2d5e, #4a4a8a);">
+            </div>
+            <div class="sidebar-thumb" style="border-radius: 50%; background: linear-gradient(135deg, #e75480, #c2185b);">
+            </div>
+            <div class="sidebar-thumb" style="background: linear-gradient(135deg, #6200ea, #9c27b0);">
+            </div>
+            <div class="sidebar-thumb" style="background: linear-gradient(135deg, #1b5e20, #4caf50); display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:800; color:white;">
+                SM
+            </div>
+            <div class="sidebar-thumb" style="overflow:hidden;">
+                <img src="https://picsum.photos/seed/indie1/36/36" alt="playlist">
+            </div>
+            <div class="sidebar-thumb" style="overflow:hidden;">
+                <img src="https://picsum.photos/seed/city1/36/36" alt="playlist">
+            </div>
+            <div class="sidebar-thumb" style="border-radius: 50%; overflow:hidden;">
+                <img src="https://picsum.photos/seed/person5/36/36" alt="artist">
+            </div>
+        </div>
+        <div class="content-area">
+            <div class="filter-row">
+                <button class="pill"><a href="liked.html"></a> Liked</button>
+                <button class="pill" onclick="changePill(this)">Music</button>
+                <button class="pill" onclick="changePill(this)">Podcasts</button>
+            </div>
+            <div class="quick-grid">
+              <div class="quick-tile">
+              <div class="liked-tile-img">&#9829;</div>
+                <span>Liked Songs</span>
+                <a href="liked.html" class="hover-play">
+                  <i class="fas fa-play"></i>
+                </a>
+              </div>
+                 <div class="quick-tile">
+                 <div class="liked-tile-img" src="https://picsum.photos/seed/dhur22/54/54"></div>
+                <span>chaar Diwaari</span>
+                <a href="followProfile.html" class="hover-play">
+                  <i class="fas fa-play"></i>
+                </a>
+                </div>
+                <div class="quick-tile">
+                    <img class="quick-tile-img" src="https://picsum.photos/seed/aap2/54/54" alt="Aap Is Dhoop Mein">
+                    <span>Aap Is Dhoop Mein (From "Gustaakh Ishq")</span>
+                    <button class="hover-play"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="quick-tile">
+                    <img class="quick-tile-img" src="https://picsum.photos/seed/theher1/54/54" alt="Theher Ja">
+                    <span>Theher Ja</span>
+                    <button class="hover-play"><i class="fas fa-play"></i></button>
+                </div>
+                 <div class="quick-tile">
+                 <div class="liked-tile-img" src="https://picsum.photos/seed/dhur22/54/54"></div>
+                <span>Saved Padcasts</span>
+                <a href="savedPodcast.html" class="hover-play">
+                  <i class="fas fa-play"></i>
+                </a>
+                </div>
+                <div class="quick-tile">
+                    <img class="quick-tile-img" src="https://picsum.photos/seed/lastletter2/54/54" alt="The Last Letter">
+                    <span>The Last Letter</span>
+                    <button class="hover-play"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="quick-tile">
+                    <img class="quick-tile-img" src="https://picsum.photos/seed/tisaddhya2/54/54" alt="Ti Saddhya Kay Karte">
+                    <span>Ti saddhya kay karte?</span>
+                    <button class="hover-play"><i class="fas fa-play"></i></button>
+                </div>
+                <div class="quick-tile">
+                    <img class="quick-tile-img" src="https://picsum.photos/seed/diwas1/54/54" alt="Diwas Ase Ki">
+                    <span>Diwas Ase Ki</span>
+                    <button class="hover-play"><i class="fas fa-play"></i></button>
+                </div>
+            </div>
+            <div class="section-head">
+                <h2>Jump back in</h2>
+                <a class="show-all-link" href="#">Show all</a>
+            </div>
+            <div class="cards-row">
+                <div class="music-card">
+                    <div class="card-img-wrap">
+                        <img src="https://picsum.photos/seed/khat2/200/200" alt="Khat">
+                        <button class="card-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="card-title">Khat</div>
+                    <div class="card-sub">Navjot Ahuja</div>
+                </div>
+                <div class="music-card">
+                    <div class="card-img-wrap">
+                        <div class="fake-img grad-orange" style="align-items:flex-end; flex-direction:column; justify-content:flex-start; padding:8px;">
+                            <div style="font-size:10px; font-weight:900; color:rgba(0,0,0,0.5); letter-spacing:0.1em;">HOT HITS</div>
+                            <div style="font-size:22px; font-weight:900; color:black; line-height:1;">HINDI</div>
+                        </div>
+                        <button class="card-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="card-title">Hot Hits Hindi</div>
+                    <div class="card-sub">Indian Hindi Hits</div>
+                </div>
+                <div class="music-card">
+                    <div class="card-img-wrap">
+                        <img src="https://picsum.photos/seed/marathi2/200/200" alt="Marathi Remix">
+                        <button class="card-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="card-title">Marathi & Hindi remix songs </div>
+                    <div class="card-sub">By Amar Walugade</div>
+                </div>
+                <div class="music-card">
+                    <div class="card-img-wrap">
+                        <div class="fake-img grad-yellow" style="align-items:flex-end; padding:10px;">
+                            <span style="font-size:20px; font-weight:900; color:#111;">daylist</span>
+                        </div>
+                        <button class="card-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="card-title">daylist</div>
+                    <div class="card-sub">Your day in a playlist.</div>
+                </div>
+                <div class="music-card">
+                    <div class="card-img-wrap">
+                        <div class="fake-img grad-navy" style="align-items:flex-end; padding:10px;">
+                            <span style="font-size:18px; font-weight:900; color:white;">Cool Mix</span>
+                        </div>
+                        <button class="card-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="card-title">Cool Mix</div>
+                    <div class="card-sub">Cool music for you. Also try pop, indie,...</div>
+                </div>
+                <div class="music-card">
+                    <div class="card-img-wrap">
+                        <img src="https://picsum.photos/seed/tumho2/200/200" alt="Tum Ho">
+                        <button class="card-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="card-title">Tum ho</div>
+                    <div class="card-sub">Jokhim</div>
+                </div>
+            </div>
+            <div class="made-for-label">Made For</div>
+            <div class="made-for-name">Gargi Golatkar</div>
+            <div class="section-head" style="margin-top: -10px;">
+                <span></span>
+                <a class="show-all-link" href="#">Show all</a>
+            </div>
+            <div class="cards-row">
+                <div class="music-card">
+                    <div class="card-img-wrap">
+                        <div class="fake-img grad-red"></div>
+                        <button class="card-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="card-title">Daily Mix 1</div>
+                    <div class="card-sub">Navjot Ahuja, Jokhim and more</div>
+                </div>
+                <div class="music-card">
+                    <div class="card-img-wrap">
+                        <div class="fake-img grad-green"></div>
+                        <button class="card-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="card-title">Daily Mix 2</div>
+                    <div class="card-sub">Arijit Singh, Jubin Nautiyal and more</div>
+                </div>
+                <div class="music-card">
+                    <div class="card-img-wrap">
+                        <div class="fake-img grad-purple"></div>
+                        <button class="card-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="card-title">Daily Mix 3</div>
+                    <div class="card-sub">Shreya Ghoshal, Kumar Sanu and more</div>
+                </div>
+                <div class="music-card">
+                    <div class="card-img-wrap">
+                        <div class="fake-img grad-pink"></div>
+                        <button class="card-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="card-title">Daily Mix 4</div>
+                    <div class="card-sub">AR Rahman, Shankar Ehsaan Loy and more</div>
+                </div>
+                <div class="music-card">
+                    <div class="card-img-wrap">
+                        <div class="fake-img grad-blue"></div>
+                        <button class="card-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="card-title">Daily Mix 5</div>
+                    <div class="card-sub">Sonu Nigam, Alka Yagnik and more</div>
+                </div>
+                <div class="music-card">
+                    <div class="card-img-wrap">
+                        <img src="https://picsum.photos/seed/mix62/200/200" alt="Daily Mix 6">
+                        <button class="card-play-btn"><i class="fas fa-play"></i></button>
+                    </div>
+                    <div class="card-title">Daily Mix 6</div>
+                    <div class="card-sub">Lata Mangeshkar, Mohammed Rafi and more</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="player-bar">
+        <div class="player-left"></div>
+        <div class="player-center">
+            <div class="control-btns">
+                <button class="ctrl"><i class="fas fa-random"></i></button>
+                <button class="ctrl"><i class="fas fa-step-backward"></i></button>
+                <button class="play-pause-btn" id="playPauseBtn" onclick="togglePlay()">
+                    <i class="fas fa-pause" id="playIcon"></i>
+                </button>
+                <button class="ctrl"><i class="fas fa-step-forward"></i></button>
+                <button class="ctrl"><i class="fas fa-redo-alt"></i></button>
+            </div>
+            <div class="progress-row">
+                <span class="time-text">-:-</span>
+                <div class="prog-bar">
+                    <div class="prog-fill"></div>
+                </div>
+                <span class="time-text right">-:-</span>
+            </div>
+        </div>
+        <div class="player-right">
+            <button class="util-btn"><i class="fas fa-list-ul"></i></button>
+            <button class="util-btn"><i class="fas fa-laptop"></i></button>
+            <div class="vol-area">
+                <i class="fas fa-volume-up"></i>
+                <div class="vol-slider">
+                    <div class="vol-fill"></div>
+                </div>
+            </div>
+            <button class="util-btn"><i class="fas fa-expand-alt"></i></button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function changePill(clicked) {
+            let allPills = document.querySelectorAll('.pill');
+            allPills.forEach(function(p) {
+                p.classList.remove('active');
+            });
+            clicked.classList.add('active');
+        }
+        let isPlaying = true;
+        function togglePlay() {
+            let icon = document.getElementById('playIcon');
+            if (isPlaying) {
+                icon.className = 'fas fa-play';
+                isPlaying = false;
+            } else {
+                icon.className = 'fas fa-pause';
+                isPlaying = true;
+            }
+        }
+    </script>
+</body>
+</html>
